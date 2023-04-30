@@ -1,9 +1,6 @@
 package com.isa_djunio.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
 import java.util.Timer;
-import java.util.TimerTask;
+
 
 public class MainActivity extends AppCompatActivity {
 
