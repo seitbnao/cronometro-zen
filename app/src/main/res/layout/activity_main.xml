@@ -5,21 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/sphere"
+        android:layout_width="249dp"
+        android:layout_height="257dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_shape" />
+
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:rotationX="33"
         android:text="00:00:00"
-        android:textSize="72sp" />
-
-    <ImageView
-        android:id="@+id/sphere"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/timer"
-        android:layout_centerHorizontal="true" />
+        android:textSize="48sp"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/startButton"
@@ -27,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sphere"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="-72dp"
-        android:layout_marginEnd="209dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="223dp"
         android:layout_marginRight="16dp"
         android:text="Start" />
 
@@ -38,17 +39,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sphere"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="211dp"
+        android:layout_marginStart="229dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="-71dp"
+        android:layout_marginTop="71dp"
         android:text="Reset" />
-
-    <ImageView
-        android:id="@+id/sphere2"
-        android:layout_width="match_parent"
-        android:layout_height="151dp"
-        android:layout_below="@+id/timer"
-        android:layout_marginTop="-247dp" />
 
     <TextView
         android:id="@+id/timer2"

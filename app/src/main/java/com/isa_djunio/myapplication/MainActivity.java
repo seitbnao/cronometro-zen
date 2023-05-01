@@ -1,6 +1,9 @@
 package com.isa_djunio.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 getResources().getColor(R.color.green),
                 getResources().getColor(R.color.blue),
                 getResources().getColor(R.color.yellow)};
-
+        startCicle();
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     if (timer == null) {
                         timer = new Timer();
                         timerTask = new STimerTask(MainActivity.this);
-                        timer.scheduleAtFixedRate(timerTask, 0, 1000);
+                        timer.scheduleAtFixedRate(timerTask, 0, 1390);
                     }
 
                     playRandomMusic();
@@ -88,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     timer = null;
                 }
 
-                sphereImage.setColorFilter(getResources().getColor(R.color.gray));
+
             }
         });
     }
@@ -131,8 +134,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void changeSphereColor() {
+    void startCicle()
+    {
         int index = random.nextInt(colors.length);
-        sphereImage.setColorFilter(colors[index]);
+
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setShape(GradientDrawable.OVAL);
+        drawable.setGradientType(GradientDrawable.RADIAL_GRADIENT);
+        drawable.setGradientCenter(0.5f, 0.5f); // centraliza o gradiente na imagem
+        drawable.setGradientRadius(900f); // define o raio do gradiente
+        drawable.setColors(new int[]{colors[index], Color.WHITE}); // define as cores do gradiente
+
+        sphereImage.setBackground(drawable);
+    }
+    private void changeSphereColor() {
+                startCicle();
     }
 }
