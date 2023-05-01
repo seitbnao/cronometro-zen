@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     playRandomMusic();
-                    changeSphereColor();
+
                 } else {
                     running = false;
                     startButton.setText("Start");
@@ -105,22 +105,28 @@ public class MainActivity extends AppCompatActivity {
             minutes = 0;
             hours++;
         }
-
+        changeSphereColor();
         String time = String.format("%02d:%02d:%02d", hours, minutes, seconds);
         timerText.setText(time);
     }
 
     private void playRandomMusic() {
-        int[] sounds = new int[] {R.raw.meditation, R.raw.meditation2, R.raw.meditation3};
+        int[] sounds = new int[]{R.raw.meditation, R.raw.meditation2, R.raw.meditation3};
         int index = random.nextInt(sounds.length);
         mediaPlayer = MediaPlayer.create(this, sounds[index]);
-        mediaPlayer.start();
+        if (mediaPlayer != null)
+            mediaPlayer.start();
     }
 
-    private void stopMusic() {
-        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
+    private void stopMusic()
+    {
+        if (mediaPlayer != null)
+        {
+            if(mediaPlayer.isPlaying())
+            {
+                mediaPlayer.stop();
+                mediaPlayer.release();
+            }
             mediaPlayer = null;
         }
     }
