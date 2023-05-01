@@ -2,6 +2,12 @@
 
  Aplicativo android para medir tempo de meditação, toca sons relaxante no decorrer do tempo.
  
+ # Requisitos
+  - Java 8.x >=
+  - Java SDK 18.x >=
+  - Android Studio
+  - API Android Level 23 >=
+  
  # Sobre
 - Aplicativo desenvolvido na disciplina de Desenvolvimento Mobile, no curso de Engenharia de Software - Universidade do Estado do Pará
 - Professor: Armando de Sá
