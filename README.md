@@ -15,5 +15,7 @@
 
  # Imagens do Aplicativo
  
-![Screenshot_18](https://user-images.githubusercontent.com/11374956/235368772-ebf72c80-3312-4183-bcc1-21789c5be720.png)
-![Screenshot_16](https://user-images.githubusercontent.com/11374956/235540418-46055676-6f6b-4d4a-b61b-dfff318f4156.png)
+![Screenshot_18](https://user-images.githubusercontent.com/11374956/236196208-b6fef853-8012-42dc-baa4-d50738aec35e.png)
+![Screenshot_19](https://user-images.githubusercontent.com/11374956/236196213-7a47f5fe-2934-42cc-9c29-ff97adf6d07e.png)
+![Screenshot_20](https://user-images.githubusercontent.com/11374956/236196216-32c11fbd-f7f5-478d-85c3-32afe65fa952.png)
+
