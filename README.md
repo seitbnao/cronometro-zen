@@ -13,10 +13,10 @@
 - Professor: Armando de Sá
 - Desenvolvido por Isabella Hadassa e Djunio Filho ( 2023 )
 
- # Imagens do Aplicativo
- 
-![Screenshot_18](https://user-images.githubusercontent.com/11374956/236196208-b6fef853-8012-42dc-baa4-d50738aec35e.png)
-![Screenshot_19](https://user-images.githubusercontent.com/11374956/236196213-7a47f5fe-2934-42cc-9c29-ff97adf6d07e.png)
-![Screenshot_20](https://user-images.githubusercontent.com/11374956/236196216-32c11fbd-f7f5-478d-85c3-32afe65fa952.png)
-
-
+ # Releases
+  - v1.0.0 - Inicio do projeto, aprenseta apenas o crononômetro inicial
+  - v1.0.1 - Foi adicionado músicas e cores de fundo ao relógio contador
+  - v3.0.1 - Adicionado página inicial, adicionado página informando a importância da meditação e uma aba para acesso ao cronômetro.
+  
+![Screenshot_18](https://user-images.githubusercontent.com/11374956/236236266-b8da0482-999b-456e-843b-4d9447e9b330.png)
+![Screenshot_20](https://user-images.githubusercontent.com/11374956/236236278-0928ee01-ce20-4fc9-b85a-f6c60ab9bedf.png)
