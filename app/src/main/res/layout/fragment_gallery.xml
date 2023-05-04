@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/backback"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <TextView
+        android:id="@+id/timer2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/rock_salt"
+        android:text="ZenTimer"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sphere"
+        android:layout_width="249dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer2" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="00:00:00"
+        android:textColor="#FDFBF6"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sphere"
+        app:layout_constraintEnd_toEndOf="@+id/sphere"
+        app:layout_constraintStart_toStartOf="@+id/sphere"
+        app:layout_constraintTop_toBottomOf="@+id/sphere"
+        app:layout_constraintTop_toTopOf="@+id/sphere" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="228dp"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="156dp"
+        android:text="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Versão: 3.0.1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+</androidx.constraintlayout.widget.ConstraintLayout>
